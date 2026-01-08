@@ -1,0 +1,120 @@
+
+<!-- O HTML utiliza elementos (tags)
+
+<> abre a tag
+</> fecha a tag
+ex.: <html> -> abre
+     </html> -> fecha
+
+*** Também há tags que não possuem fechamento = elementos vazios (void elements):
+        <img>
+        <br>
+        <input>
+        <link>
+        etc...
+
+O HTML tem aproximadamente 140 tags. Nem todas são utilizadas.
+
+Alguns exemplos:
+<h1> a <h6>: Definem títulos, do maior (<h1>) ao menor (<h6>). 
+<p>: Define um parágrafo de texto. 
+<a>: Cria um link (hiperlink) para outra página ou recurso. 
+<img>: Insere uma imagem na página. 
+<ul>: Define uma lista não ordenada (com marcadores). 
+<ol>: Define uma lista ordenada (numerada). 
+<li>: Define um item dentro de uma lista (<ul> ou <ol>). 
+<br>: Insere uma quebra de linha. 
+
+***************************************************************
+
+Site com tags - ordem alfabética: https://www.w3schools.com/tags/
+
+***************************************************************
+
+METADADOS
+
+
+As metatags são metadados que são interpretados apenas pelo navegador.
+Nelas são colocadas informações da página como nome do autor, tipo de caracteres utilizados,
+palavras chaves do site para mecanismos de busca, tipos de dispositivos que acessam, etc...
+
+Algumas das principais metatags:
+
+    TAGS PADRÃO (atalhos VSCode: ! ou digita html > seleciona html5):
+    
+        <meta charset="UTF-8">
+        
+            Informa ao navegador o tipo de codificação de caracteres é utilizada na página.
+            Isso evita problemas com acentuação, etc.
+
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+            
+            Essa metatag é utilizada para o navegador Internet Explorer.
+            Por se muito antigo, as páginas podem não funcionar muito bem.
+            Então é informado que é equivalente ao Edge.
+            Aparentemente não é mais utilizada pois nem aparece nas metatags padrão (html:5)
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            Faz com que o navegador ajuste a página ao dispositivo que está acessando.
+
+    OUTRAS TAGS ÚTEIS - SEMPRE UTILIZAR:
+
+        <meta name="description" content="Breve descrição do site!">
+
+            Informar uma breve descrição da página.
+
+        <meta name="keywords" content="palavra chave 1, palavra chave 2, etc...">
+
+            Cria palavras chaves para facilitar a localicação da página
+            por buscadores (bing, google, etc...)
+
+        <meta name="author" content="Diego Ferreira">
+
+            Nome do autor do site. MUITO IMPORTANTE.
+
+        <title> TÍTULO DO SITE </title>
+            Título do site. Aparece na aba do navegador.
+    
+--> 
+
+<!-- Estrutura padrão de uma página HTML (atalhos VSCode: ! ou digita html > seleciona html5): -->
+
+<!DOCTYPE html> <!--Sempre começar com essa tag. Informa ao navegador o tipo do documento, nesse caso, html5-->
+<html lang="pt-br"> <!-- <abre> Raíz (root) de um documento html - TAG PRINCIPAL - Também está informando o idioma da página para acessibilidade-->
+
+<head> <!-- <abre> informações sobre a página (metadados e informações) -->
+    <meta charset="UTF-8"> <!-- Informa o tipo de codificação de caracteres da página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página ao dispositivo -->
+    <title>Document</title> <!-- Título da página -->
+    
+    <!-- tags de para metadados: descrição, autor, keywords -->
+    <meta name="description" content="AQUI VAI A DESCRIÇÃO DA PÁGINA"> <!-- descrição -->
+    <meta name="author" content="DFR"> <!-- autor -->
+    <meta name="keywords" content="HTML, programação, web, sites, ">
+</head> <!-- Fecha metatados -->
+
+<body> <!-- Abre corpo da página -->
+    <!-- conteúdo da página -->
+</body> <!-- Fecha corpo da página -->
+
+</html> <!-- Fecha tag principal (root) -->
+
+
+
+<!-- Estrutura padrão - Sem tantos comentários: -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="descrição da pagina">
+    <meta name="author" content="DFR">
+    <meta name="keywords" content="palavras chaves da página">
+</head>
+<body>
+    <!-- conteúdo -->    
+</body>
+</html>
