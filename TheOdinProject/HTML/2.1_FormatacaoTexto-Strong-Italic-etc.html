@@ -1,0 +1,119 @@
+<!--
+
+RESUMO (utilização das tags abaixo)
+Tags para formatação de texto em HTML:
+
+NEGRITO: 
+    tag <b>. Exemplo: <b> Texto em negrito </b>
+
+ENFATIZAR ALGO: 
+    tag <strong>. Exemplo: <strong> Texto enfatizado </strong>
+    
+    A tag strong é interpretada pelo nevegador como algo importante de ser enfatizado.
+        Visualmente é parecido com a tag <b> de negrito. Porém, a tag negrito é apenas para realçar 
+        o texto, enquanto a tag <strong> enfatiza para o navegador que é algo importante (especialmente
+        para acessibilidade (leitores de tela).
+LINHA DE SEPARAÇÃO: 
+    tag <hr>. Exemplo: <hr> após ao fim de um parágrafo para separar uma seção da outra.
+
+QUEBRA DE LINHA: 
+    tag <br> como já visto.
+
+ITÁLICO: 
+    tag <em> deixa texto em italico e também sinaliza enfase no texto para leitores de tela.
+      ex.: <em> texto em itálico e enfatizado para acessibilidade </em>
+    
+    tag <i>. Texto em italico mas apenas esteticamente, não há enfase de acessibilidade.
+      Exemplo: <i> Texto em itálico </i>
+
+SUBLINHADO: 
+    tag <u>. Exemplo: <u> Texto sublinhado </u>
+
+TEXTO UM POUCO MENOR: 
+    tag <small>. Exemplo: <small> Texto pequeno </small>
+    
+        CSS tem soluções melhores.
+
+TEXTO RISCADO (TACHADO): 
+    tag <del>. Exemplo: <del> Texto riscado </del>
+
+TEXTO SUPERIOR E INFERIOR: 
+    tags <sup> e <sub>. Exemplos: 2 <sup> 3 </sup> = 2³
+    
+        Essas tags são para colocar texto em cima (sup) ou em baixo. Muito usados na matemática
+        para números elevados ou sobescritos. Pode ser utilizados para qualquer texto, não apenas números.
+        Mais detalhes nos exemplos abaixo. 
+
+TEXTO MARCADO (MARCA TEXTO): 
+    tag <mark>. Exemplo: <mark> Texto marcado </mark>
+    
+        CSS tem melhores.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formatação de texto no HTML</title>
+        <meta name="autor" content="DFR">
+        <meta name="description" content="formatação texto html, strong, italic">
+        <meta name="keywords" content="html, tags, texto, strong, italic">
+    </head>
+    <body>
+       <h1> TAGS para formatação de texto em HTML:</h1>
+    <hr> <!-- linha de separação -->
+   
+    <p>Texto em NEGRITO (tag b): <b>Este texto está todo em negrito.</b></p> <!-- NEGRITO -->
+    <hr>
+   
+    <p>Texto ENFATIZADO (tag strong): <strong>Este texto é importante e está todo enfatizado.</strong></p>
+    <hr>
+   
+    <p>QUEBRA DE LINHA (tag br):</p>
+   
+    <p>
+        Exemplo <br>
+        de <br>
+        quebra <br> 
+        linha. 
+    </p>
+    <hr>
+
+    <p>Texto em ITÁLICO (tag i): <i>Este texto está todo em itálico, porém, apenas esteticamente, sem ênfase.</i></p>
+    <br>
+    <p>Texto em ITÁLICO ENFATIZADO (tag em): <em>Este texto está todo em itálico e ENFATIZADO.</em></p>
+    <hr>
+
+    <p>Texto SUBLINHADO (tag u): <u>Este texto está todo sublinhado.</u></p>
+    <hr>
+
+    <p>Texto UM POUCO MENOR (tag small): <small>Este texto está um pouco menor.</small></p>
+    <hr>
+
+    <p>Texto RISCADO (TACHADO) (tag del): Texto <del>RISCADO</del> TACHADO!</p>
+    <hr>
+
+    <p>
+        Textos SOBREESCRITOS e textos SUBESCRITOS (tags sup e sub): <br>
+        Exemplo de elevações (números em cima): <br> 
+        Dois elevado a três: 2 <sup>3</sup>. <br>
+        Cinco elevado a cem: 5 <sup>100</sup>. <br>
+        <br>
+        Números subescritos (números em baixo): <br>
+        10 <sub>5</sub>. <br>
+        8 <sub>200</sub>.
+
+
+    </p>
+    sub/sup em textos: <br>
+    Texto<sup>SUPERIOR</sup> - Tag sup (<b>cima</b>) <br>
+    Texto<sub>INFERIOR</sub> - Tag sub (<b>baixo</b>) 
+    <hr>
+
+    <p>Texto MARCADO (MARCA TEXTO): (tag mark): <mark>Este texto está todo marcado.</mark></p>
+    <hr>
+    </body>
+</html>
