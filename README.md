@@ -2,4 +2,4 @@
 
 Repositório de estudos.
 
-“The expert in anything was once a beginner.” — Anonymous
+“The expert in anything was once a beginner.”
