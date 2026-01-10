@@ -1,0 +1,84 @@
+<!--
+TAG PARA ADICIONAR IMAGEM: <img src="">
+    USAR O ATRIBUTO src="" = SOURCE - CAMINHO
+    A TAG <img> é um elemento vazio (void element) = NÃO TEM TAG DE FECHAMENTO 
+
+    PODE SER UTILIZADO CAMINHO ABSOLUTO OU RELATIVO.
+
+    EX imagem com caminho absoluto: <img src="https://www.sitedeimagens.com/imagem.png">
+
+    CAMINHO ABSOLUTO NÃO HÁ CONTROLE DA DISPONIBILIDADE DA IMAGEM 
+    ALÉM DE PODER TER PROBLEMAS COM DIREITOS AUTORAIS.
+
+    *** SEMPRE CONFERIR LICENÇA DE USO DE IMAGENS ANTES DE USAR ***
+
+    VER SITES COM IMAGENS SEM DIREITOS AUTORAIS.
+    Conferir os detalhes de licença - google images:
+        Ferramentas > Direitos de uso > seleciona "Licenças Creative Common"
+        Abre imagem > Detalhes da licença
+        Ver os detalhes, se é domínio público, como usar, como dar creditos ao autor(a) etc...
+
+TAGS DEFINIR TAMANHO DE IMAGENS:
+
+    LARGURA -> width="largura desejada (em pixel)"
+    ALTURA -> height="altura desejada (em pixel)"
+
+    Sempre definir tamanho da imagem para evitar problemas no carregamento do site 
+    e para determinar o peso da imagem. Evitar imagens pesadas.
+    VER SITES QUE COMPRIMEM IMAGENS.
+
+TEXTO ALTERNATIVO -> alt=""
+    Adiciona uma descição à imagem. Para casos que o navegador não carrega ou
+    não tem acesso a imagens, ou caso o usuário prefira não carregá-las, mostrará apenas a descrição
+    ** ESPECIALMENTE IMPORTANTE PARA ACESSIBILIDADE DE PESSOAS COM DEFICIENCIA VISUAL (leitores de tela).
+    Também informa aos mecanismos de busca as imagens do site, facilitando sua localização.
+
+
+IMAGENS COM LINKS
+    Exemplo:
+        <a href="endereço do link"> <img src="caminho da imagem"> </a>
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML - IMAGENS</title>
+    <meta name="author" content="DFR">
+    <meta name="description" content="Imagens com HTML">
+    <meta name="keywords" content="HTML, web, imagens">
+</head>
+<body>
+    <!-- imagem no título -->
+    <h1> <img src="html-icone.png" height="50" width="50">    HTML - IMAGENS</h1>
+    <hr>
+
+    <h2> IMAGENS COM CAMINHO ABSOLUTO: </h2>
+    <h3>Lagura: 800px</h3>
+    <img src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg" width="800">
+    <br> <br>
+
+    <h3>ADICIONANDO DESCRIÇÃO DA IMAGEM (Parâmetro alt)</h3>
+    <h3> Altura: 300px  </h3>
+    <img src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg" height="300" alt="códigos html">
+    <br> <br>
+                    
+    <h3> Altura: 300px x Largura: 600px </h3>
+    <img src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg"  alt="códigos html" height="300" width="600">
+    <br> <br>
+
+    <h2>IMAGENS COM CAMINHO RELATIVO: </h2>
+    <h3>Imagem na mesma pasta:</h3>
+    <img src="odin1.png" alt="Logo The Odin Project" height="400" width="400">
+    <br> <br>
+
+    <h3> Imagem em outra pasta: </h3>
+    <img src="images/odin3.gif" alt="Odin, Pai de Todos" height="500" width="700">
+    <br> <br>
+        
+    <h2> IMAGEM COM LINK: </h2>
+    <a href="https://www.theodinproject.com/" target="_blank" rel="noreferrer"><img src="odin2.png" height="150" width="500"></a>
+    <br> <br>
+</body>
+</html>
