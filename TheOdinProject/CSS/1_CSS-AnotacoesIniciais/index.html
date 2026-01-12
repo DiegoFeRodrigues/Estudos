@@ -104,4 +104,54 @@ Seletores:
 
             <div class="conteudo"></div> # NENHUMA RELAÇÃO DE ANCESTRALIDADE
 
+ALGUMAS PROPRIEDADES:
+    Cores:    # Pode ser usado nomes de cor, HEX, RGB E HSL
+        color = cor do texto do elemento. 
+        background-color = cor de fundo. 
+    
+    Texto:
+        font-family: Arial, Helvetica, sans-serif;      -> muda a fonte para essa família
+            font-size: 50px;         -> fonte com tamanho de 50 pixels
+            font-weight:bold;        -> fonte em negrito
+            text-align: center;      -> texto centralizado
+            etc...
+
+        # USAR MAIS DE UMA FONTE PARA O CASO DO NAVEGADOR NÃO CONSEGUIR CARREGAR A PRIMEIRA OPÇÃO.
+
+
+MÉTODOS DE ADIÇÃO DO CSS NO HTML:
+    
+    Externo:
+        Arquivo .css separado com todas as propriedades.        # MELHOR OPÇÃO PARA MODULARIZAÇÃO
+            Linkar no header:
+                <head>
+                    <link rel="stylesheet" href="arquivoComPropriedadesDesejadas.css">
+                </head>
+    
+    Interno:
+        Direto no header da página.     # APLICADO APENAS NESSA PÁGINA
+            <head>
+                <style>
+                    div {
+                    color: white;
+                    background-color: black;
+                    }
+
+                    p {
+                    color: red;
+                    }
+                </style>
+            </head>
+        
+    Inline:
+        Aplicado apenas no elemento desejado.
+            <body>              #  APENAS A DIV RECEBE AS PROPRIEDADES ABAIXO:
+                <div style="color: white; background-color: black;"> CONTEÚDO DA DIV </div>
+            </body>
+
+    
+    "PRIORIDADE" DOS MÉTODOS:
+        1° - CSS INLINE = Inline tem prioridade sobre os outros. Embora não recomendado, pode ser bom para casos pontuais.
+        2° - CSS INTERNO
+        3° - CSS EXTERNO
 -->
