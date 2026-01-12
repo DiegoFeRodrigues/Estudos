@@ -1,0 +1,76 @@
+
+<!--
+
+CSS = CASCADING STYLE SHEETS
+sintaxe basica:
+
+    seletor {   # SELETOR = IDENTIFICADOR
+        propriedade: valor
+    }
+
+Seletores:
+    Universal:
+        * {                     # SELECIONA TODOS OS ELEMENTOS (TAGS)
+            color: white;       # COR BRANCA APLICADA A TODOS ELEMENTOS 
+        }
+    
+    Tipo:
+        div {   # TODAS AS TAGS DIV RECEBEM AS PROPRIEDADAS ABAIXO
+                background-color="VALOR DESEJADO"
+                text-align="center"
+                etc...
+            }
+    
+    Classe:
+        No arquivo .css:
+            
+            .tamanho_texto{
+                text-size: 50px;
+            }
+            
+            .texto-centralizado{
+                text-align: center;
+            }
+
+        No arquivo .html:
+
+            <p class="tamanho_texto"> conteúdo do parágrafo </p>
+                # esse parágrafo usára as propriedades de tamanho de texto da classe .tamanho_texto
+
+            Usar classes juntas:
+                <p class="tamanho_texto texto_centralizado"> conteúdo do parágrafo </p>
+                    # Tamanho texto = 50px + texto centralizado
+
+    ID:
+        .css:
+
+            #corpo_da_pagina{
+                background-color: lightgrey;
+                text-size: 30px;
+                text-align: center;
+            }
+
+        .html:
+
+            <body id="corpo_da_pagina">
+
+    Agrupar seletores:
+
+                .paragrafo1,
+                .paragrafo2, {
+                    color: blue;        # PROPRIEDADAS COMPARTILHADAS ENTRE CLASSES paragrafo1 e paragrafo2 
+                    background-color: white;
+                }
+
+                .paragrafo1 {
+                    # PROPRIEDADES INDIVIDUAL paragrafo1 
+                }
+                
+                .paragrafo2 {
+                    # PROPRIEDADES INDIVIDUAL paragrafo2 
+                }
+
+
+
+
+-->
