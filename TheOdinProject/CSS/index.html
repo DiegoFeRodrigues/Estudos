@@ -56,21 +56,52 @@ Seletores:
 
     Agrupar seletores:
 
-                .paragrafo1,
-                .paragrafo2, {
-                    color: blue;        # PROPRIEDADAS COMPARTILHADAS ENTRE CLASSES paragrafo1 e paragrafo2 
-                    background-color: white;
+        .paragrafo1,
+        .paragrafo2, {
+            color: blue;        # PROPRIEDADAS COMPARTILHADAS ENTRE CLASSES .paragrafo1 e .paragrafo2 
+            background-color: white;
+        }
+
+        .paragrafo1 {
+            # PROPRIEDADES INDIVIDUAL .paragrafo1 
+        }
+        
+        .paragrafo2 {
+            # PROPRIEDADES INDIVIDUAL .paragrafo2 
+        }
+
+    Seletores acorrentados:
+        
+        .css:
+                .subsecao.paragrafo {   # SEM ESPAÇO
+                    color: white;
                 }
+                            # QUALQUER ELEMENTO QUE TIVER AS CLASSES .subsecao E .paragrafo SERÃO SELECIONADOS 
+        .html:
+            <div>
+                <div class="subsecao titulo"> TÍTULO DE SUBSEÇÃO </div>
+                <p class="subsecao paragrafo"> PARÁGRAFO DA SUBSEÇÃO </p>
+            </div>
 
-                .paragrafo1 {
-                    # PROPRIEDADES INDIVIDUAL paragrafo1 
-                }
-                
-                .paragrafo2 {
-                    # PROPRIEDADES INDIVIDUAL paragrafo2 
-                }
+        TAMBÉM PODE SER USADO PARA IDs:
+            usar # (ID) no lugar de . (classe), obviamente.
 
 
+    Combinação ancestral:
+        
+        .css:
 
+            .ancestral .conteudo {      # APENAS DESCENDENTES DA CLASSE .ancestral (E SEUS DESCENDETES) É SELECIONADO
+                # PROPRIEDADES
+            }
+                        
+        .html:
+            <div class="ancestral">     # AVÔ
+                <div class="conteudo">  # PAI -> RECEBE PROPRIEDADES
+                    <div class="conteudo"></div> # FILHO -> RECEBE PROPRIEDADES
+                </div>
+            </div>
+
+            <div class="conteudo"></div> # NENHUMA RELAÇÃO DE ANCESTRALIDADE
 
 -->
