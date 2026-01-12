@@ -1,6 +1,6 @@
 
 <!--
-    CSSS DE ADIÇÃO DE CSS
+    CSS DE ADIÇÃO DE CSS
 -->
 
 <html lang="pt-br">
@@ -14,6 +14,15 @@
         
         <!-- LINKANDO AS PROPRIEDADES DO ARQUIVO EXTERNO style.css -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- CSS INTERNO -->
+        <style>
+            p {
+                background-color: green;
+                color: white;       /* Comentário no CSS interno */
+                font-size: 18px;
+            }
+        </style>
     </head>
     <body>
         <h1>CSS - Exercício 1</h1>
@@ -22,6 +31,8 @@
             Parágrafo estilizado com CSS INTERNO: <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ipsum provident doloremque ullam magni veniam nobis nesciunt ipsam architecto saepe odit, reprehenderit quas ab? Deleniti, quod accusantium? Laboriosam, animi vero.
         </p>
-        <button>Esse botão foi estilizado com CSS INLINE</button>
+
+        <!-- CSS INLINE -->
+        <button style="background-color: orange; font-size: 18px;">Esse botão foi estilizado com CSS INLINE</button>
     </body>
 </html>
