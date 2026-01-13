@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+.para {  /* colocado acima de .smal-para */
+  font-size: 22px;
+  font-weight: 1000; /* adicionado negrito com valor máximo */
+}
+
+.small-para {
+  font-size: 14px;
+  font-weight: 1000; /* aumentado valor de 800 p/ máximo */
+}
+
+
+#confirm-button { /* seletor mudado para id */
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+div .child { /* adicionado tipo ancestral (div) */
+  color: rgb(0, 0, 0);
+  font-weight: 1000; /* negrito aumentado de 800 p/ 1000) */
+  font-size: 14px;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
