@@ -1,0 +1,85 @@
+
+/*
+Páginas são organizadas/estruturadas por boxes (caixas).
+
+Formas de manipular boxes:
+
+    padding = espaço entre a borda de um box e seu conteúdo
+        geralmente usado para adicionar fundo a um elemento, estilizar botões
+
+            Exemplo sintaxe padding:
+            padding-top: 30px       # preenchimento de 30 pixels dentro do elemento.
+            padding-bottom: 80px    # preenchimento de 80 pixels dentro do elemento.
+
+        Shorthand - JUNTA PROPRIEDADES:
+            padding: 30 80      # mesmas propriedades anteriores, porém juntas em uma única expressão.
+    
+    margin = espaço entre borders de um box e borders de box adjacentes
+        geralmente usado para criar espaços entre elementos
+        PODE USAR MAGENS POSITIVAS E NEGATIVAS
+        Margins POSITIVAS se juntam (colapsam). O tamanho será o MAIOR valor.
+        Margins NEGATIVAS se juntam (colapsam), O tamanho será o MENOR valor.
+        ** Se UMA DAS MARGENS FOR NEGATIVA, SEU VALOR SERÁ SUBTRAÍDO DO TOTAL. **
+            
+            Exemplo sintaxe margin:
+            margin-left: 20px       # margem de 20 pixel a esquerda
+            margin-bottom: 150px    # margem de 150 pixel em baixo
+            
+            Shorthand:
+                margin: 30 50 80 10 # Sequência: topo, direita, baixo, esquerda
+                margin: 0 auto;     # Topo: 0, direita: automático (AUTO FUNCIONA APENAS PARA MARGEM HORIZONTAL)
+
+        MAIS SOBRE margin:
+            https://css-tricks.com/almanac/properties/m/margin/
+
+    border = espaço entre a margin e o padding
+        
+        Exemplo sintaxe border:
+            border:1px solid red;   # borda de 1 pixel, sólida com cor vermelha.
+            border-radius:30px      # borda arredondada com 30 pixels.
+    
+BOX-SIZING:
+
+    Por padrão o CSS usa a propriedade box-sizing com valor content-box:
+
+        .classe-exemplo {
+            box-sizing: content-box;    # padrão, mesmo sem informar
+            width: 50px;
+            height: 30px;
+            padding: 20px;
+            border: 10px;
+        }
+
+    Assim, o tamanho de um elemento será a soma das propriedades 
+    informadas (width e height) + padding + border (em cima e em baixo)
+    
+        OU SEJA, PADDING E BORDER "AUMENTAM O ELEMENTO PARA FORA"
+    
+    Então o tamanho de um elemento que receberia a classe acima seria:
+
+        width: 50px (informado) + padding: 40px (20 cima + 20 baixo) + border: 20px (10 cima + 10 baixo)    
+            TOTAL WIDTH: 110px
+        
+        height: 30px (informado) + padding: 40px + border 20px (conforme acima)
+            TOTAL HEIGHT: 90px
+        
+        OU SEJA, O ELEMENTO QUE INICIALMENTE RECEBEU OS VALORES DE 50px (LARGURA) E 30px (ALTURA)
+        FICA NA VERDADE COM TAMANHO DE: 11Opx (LARGURA) x 90px (ALTURA).
+
+    Para manter as propriedades de tamanho informadas, usar propriedade box-sizing com valor border-box:
+        
+        .classe-exemplo-dois {     # todos os elementos terão suas propriedades de tamanhos mantidas
+            box-sizing: border-box;
+            width: 50px;
+            height: 30px;
+            padding: 20px;
+            border: 10px;
+        }
+
+    Assim um elemento que receber a classe acima mantém as propriedades de tamanho informadas.
+        OU SEJA, PADDING E BORDER "INVADEM" (SÃO INCLUÍDOS) O CONTEÚDO, MANTENDO O TAMANHO DEFINIDO NAS PROPRIEDADES (width e height).
+    TAMANHO TOTAL DO ELEMENTO: 50px x 30px, como definido na classe acima.
+
+    Mais detalhes das informações acima e MUITO mais em:
+        https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model
+*/
