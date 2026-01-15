@@ -1,0 +1,74 @@
+
+/*
+
+SEMPRE iníciar uma página com um HTML bem estruturado para aproveitar o NORMAL FLOW ao máximo. 
+
+Algumas propriedades que alteram o normal flow, quando necessário:
+    
+    display - block, inline, inline-block, grid, flexbox
+    float
+    position 
+
+    ***********************************************
+    MAIS SOBRE NORMAL FLOW:
+	https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow
+
+    ***********************************************
+
+display: block
+    Elementos em bloco apareceção um em cima do outro.
+    Novo elemento inicia em nova linha.
+    
+    Exemplos de tags que por padrão possuem display block:
+
+		<address>	<article>	<aside>     <blockquote>
+		<canvas>	<dd>		<div>		<dl>
+		<dt>		<fieldset>	<figure>    <figcaption>
+		<footer>	<form>		<h1>-<h6>	<header>
+		<hr>		<li>		<main>		<nav>
+		<noscript>	<ol>		<p>		    <pre>
+		<section>	<table>		<tfoot>		<ul>
+		<video>        
+
+    DIV:
+        block por padrão.
+        usado como conteiner p/ agrupar outros elementos
+        separa a página em difrentes blocos
+
+
+display: inline
+    Elementos inicia na mesma linha.
+    Ocupa apenas o espaço necessário.
+
+    Exemplos de tags que por padrão possuem display do tipo inline:
+
+	<a>	     <abbr>		 <acronym>   <b>
+	<bdo>	 <big>		 <br>		 <button>
+	<cite>	 <code>		 <dfn>		 <em>
+	<i>	     <img>		 <input>	 <kbd>
+	<label>	 <map>		 <object>	 <output>
+	<q>	     <samp>		 <script>	 <select>
+	<small>	 <span>		 <strong>	 <sub>
+	<sup>	 <textarea>	 <time>		 <tt>
+	<var>
+    
+    ***********************************************
+    MAIS SOBRE BLOCK E INLINE:
+	https://www.w3schools.com/html/html_blocks.asp
+    
+    ***********************************************
+
+    SPAN:
+    inline por padrão.
+    usado para agrupar texto e elementos inline.
+
+
+display: inline-block - meio termo
+    inline com padding e margin de block
+
+    ***********************************************
+    MAIS SOBRE INLINE-BLOCK:
+	https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block
+
+    ***********************************************
+*/
