@@ -1,0 +1,44 @@
+
+/* 
+propriedades com comentários na frente foram adicionadas
+minha solução: */
+
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  padding: 5px; /* adicionado padding */
+}
+
+.title {
+  background: #e3f4ff;
+  padding: 10px; /* adicionado padding */
+  margin-bottom: 10px; /* adicionado margem em baixo*/
+  font-size: 16px; /* adicionado tamanho de fonte */
+}
+
+.content {
+  background: #e3f4ff;
+  padding: 10px; /* adicionado padding */
+  margin-bottom: 10px; /* adicionado margem em baixo*/
+}
+
+.button-container {
+  background: #e3f4ff;
+  padding: 10px; /* adicionado padding */
+  margin-bottom: 10px; /* adicionado margem em baixo*/
+  text-align: center; /* texto alinhado ao centro */
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  display: block; /* mudado display para block (tag button é inline por padrão) */
+  margin: auto; /* margem automatica para centralizar */
+  padding: 8px 20px; /* shorthand 8px padding verticar / 20px padding horizontal */
+}
