@@ -4,6 +4,17 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.titulo {
+.titulo-inicial {
     text-align: center;
+    background-color: darkslategray;
+    padding-top: 10px;
+    color: #e1b35e;
 }
+
+.texto-titulo {
+    margin: 5px auto 9px;
+}
+
+.borda {
+    border-bottom: 10px groove #e1b35e;
+} 
