@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e1b35e;
+    background-color: darkslategray;
 }
 
 .titulo-inicial {
@@ -18,3 +20,27 @@ body {
 .borda {
     border-bottom: 10px groove #e1b35e;
 } 
+
+.img-link {
+    margin: 70px 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.caesar:hover {
+    content:url(receitas/SaladaCaesar/caesar-thumb.png);
+}
+
+.texto-caesar {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: black;*/
+    border-radius: 15px;
+    padding: 5px 5px;
+}
+
+a.linkcaesar {
+    color: #e1b35e;
+}
