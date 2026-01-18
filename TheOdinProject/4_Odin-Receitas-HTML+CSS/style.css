@@ -38,11 +38,14 @@ body {
     content:url(receitas/Strogonoff/strogonoff-thumb.png);
 }
 
+.pudim:hover {
+    content: url(receitas/Pudim/pudim-thumb.png);
+}
+
 .texto-card{
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 39%;
+    left: 33%;
     background-color: rgba(0, 0, 0, 0.7);
     /*background-color: black;*/
     border-radius: 15px;
@@ -52,4 +55,8 @@ body {
 
 a.link-texto-card {
     color: #e1b35e;
+}
+
+.receitas {
+    text-align: center;
 }
