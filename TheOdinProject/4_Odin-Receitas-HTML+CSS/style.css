@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #e1b35e;
     background-color: darkslategray;
 }
 
@@ -57,6 +56,15 @@ a.link-texto-card {
     color: #e1b35e;
 }
 
-.receitas {
+.centralizar {
     text-align: center;
+}
+
+.corpo-receitas {
+    color: #fff;
+}
+
+h1, 
+h2 {
+    color: #e1b35e;
 }
