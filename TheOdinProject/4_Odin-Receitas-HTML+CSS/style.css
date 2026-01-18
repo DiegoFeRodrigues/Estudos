@@ -21,8 +21,11 @@ body {
     border-bottom: 10px groove #e1b35e;
 } 
 
-.img-link {
+.div-separacao {
     margin: 70px 10px;
+}
+
+.img-card {
     display: inline-block;
     position: relative;
 }
@@ -31,16 +34,22 @@ body {
     content:url(receitas/SaladaCaesar/caesar-thumb.png);
 }
 
-.texto-caesar {
+.strogonoff:hover {
+    content:url(receitas/Strogonoff/strogonoff-thumb.png);
+}
+
+.texto-card{
     position: absolute;
-    top: 33%;
-    left: 25%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
     /*background-color: black;*/
     border-radius: 15px;
     padding: 5px 5px;
+    text-align: center;
 }
 
-a.linkcaesar {
+a.link-texto-card {
     color: #e1b35e;
 }
