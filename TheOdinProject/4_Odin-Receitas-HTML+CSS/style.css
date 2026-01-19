@@ -84,20 +84,20 @@ h4 {
     border-bottom: 1px dashed #e1b35e;
 }
 
-a.botao-voltar {
+a.botao{
     margin-top: 20px;
     margin-bottom: 20px;
     display: inline-block;
     padding: 10px;
     background-color: darkslategray;
     border: 2px solid #e1b35e;
-    border-radius: 20%;
+    border-radius: 8%;
     color: #e1b35e;
     text-decoration: none;
     font-weight: 900;
 }
 
-a.botao-voltar:hover {
+a.botao:hover {
     background-color: #e1b35e;
     color: darkslategray;
 }
