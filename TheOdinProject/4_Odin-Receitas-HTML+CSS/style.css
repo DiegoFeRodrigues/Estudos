@@ -1,10 +1,33 @@
 
 
+/* corpo e conteúdo das páginas: */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: darkslategray;
 }
 
+h1, 
+h2,
+h4 {
+    color: #e1b35e;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.corpo-receitas {
+    margin: 0 20px 30px 20px;
+    color: #fff;
+}
+
+.borda-receitas {
+    border-left: 1px dashed #e1b35e;
+    border-right: 1px dashed #e1b35e;
+    border-bottom: 1px dashed #e1b35e;
+}
+
+/* Cabeçalho Odin Receitas: */
 .titulo-inicial {
     text-align: center;
     background-color: darkslategray;
@@ -24,9 +47,15 @@ body {
     margin: 70px 10px;
 }
 
+/* imagens / cards: */
 .img-card {
     display: inline-block;
     position: relative;
+}
+
+.img-receita {
+    max-width: 100%;
+    height: auto;
 }
 
 .caesar:hover {
@@ -45,45 +74,19 @@ body {
     position: absolute;
     top: 29%;
     left: 33%;
-    background-color: rgba(0, 0, 0, 0.7);
-    /*background-color: black;*/
-    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
     padding: 5px 5px;
     text-align: center;
+    border-bottom: 2px solid #e1b35e;
+    border-right: 1px solid #e1b35e;
 }
 
 a.link-texto-card {
     color: #e1b35e;
 }
 
-.centralizar {
-    text-align: center;
-}
-
-h1, 
-h2,
-h4 {
-    color: #e1b35e;
-}
-
-.img-receita {
-    max-width: 100%;
-    height: auto;
-}
-
-.corpo-receitas {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    color: #fff;
-}
-
-.borda-receitas {
-    border-left: 1px dashed #e1b35e;
-    border-right: 1px dashed #e1b35e;
-    border-bottom: 1px dashed #e1b35e;
-}
-
+/* botões: */
 a.botao{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -91,7 +94,7 @@ a.botao{
     padding: 10px;
     background-color: darkslategray;
     border: 2px solid #e1b35e;
-    border-radius: 8%;
+    border-radius: 10%;
     color: #e1b35e;
     text-decoration: none;
     font-weight: 900;
