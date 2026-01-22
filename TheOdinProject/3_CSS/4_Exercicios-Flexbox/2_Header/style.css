@@ -1,0 +1,36 @@
+.header  {
+  font-family: monospace;
+  background: papayawhip;
+  border: 2px solid red;  /* borda para visualização do conteiner ou item */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;  /* para evitar que itens se sobreponham */
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  background: white;
+  padding: 4px 32px;
+  border: 2px solid red;  /* borda para visualização do conteiner ou item */
+}
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  display: flex;
+  gap: 10px;  /* gap entre itens da lista */
+  padding: 0; /* padding zerado. original = padding-inline-start: 40; - visto após inspecionar com o devtools */
+  border: 2px solid red;  /* borda para visualização do conteiner ou item */
+}
+
+a {
+  font-size: 22px;
+  background: white;
+  padding: 8px;
+  /* this removes the line under the links */
+  text-decoration: none;
+  border: 2px solid red;  /* borda para visualização do conteiner ou item */
+}
