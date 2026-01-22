@@ -13,8 +13,9 @@ body {
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex; /* flex */
-  align-items: center; /* centraliza verticalmente */
   justify-content: space-between; /* mudado para space-between - espaço entre itens e bordas */
+  padding: 8px; /* posso usar apenas um padding único no conteiner pai ao inves de repetir em cada filho (esquerda e direita) */
+  gap: 16px; /* espaço entre elementos do lado esquerdo e elementos do lado direito */
 }
 
 .profile-image {
@@ -30,7 +31,6 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
 }
 
 button {
@@ -45,7 +45,6 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
-  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
 }
 
 ul {
@@ -53,16 +52,12 @@ ul {
   display: flex; /* flex */
   padding: 0;  /* removendo padding-inline-start: 40; */
   gap: 16px;  /* espaço entre itens com links */
-  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
+  align-items: center; /* alinha elementos verticalmente dentro do conteiner direito*/
 }
 
-.esquerda { /* propriedades elementos esquerda */
-  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
+.esquerda,  /* classes compartilham mesmas propriedades */
+.direita {
   display: flex; /* flex */
   gap: 16px;  /* espaço entre logo e links */
-  padding: 8px; /* padding cima = 0 / padding lados = 8px para cumprir exigência de espaçamento dos lados. */
-}
-
-.direita { /* propriedades elementos direita */
-  display: flex;
+  align-items: center; /* centraliza verticalmente dentro dos containers */
 }
