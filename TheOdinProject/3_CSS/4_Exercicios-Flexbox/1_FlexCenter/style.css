@@ -1,0 +1,19 @@
+.container {
+  background: dodgerblue;
+  border: 4px solid midnightblue;
+  width: 400px;
+  height: 300px;
+  display: flex;  /* conteiner mudado para display: flex */
+  flex-direction: row; /* determinando direção do eixo principal - row = direção em linha*/
+  justify-content: center; /* centralizando conteúdo no eixo principal */
+  align-items: center;  /* centralizando itens no eixo transversal */
+}
+
+.box {
+  background: palevioletred;
+  font-weight: bold;
+  text-align: center;
+  border: 6px solid maroon;
+  width: 80px;
+  height: 80px;
+}
