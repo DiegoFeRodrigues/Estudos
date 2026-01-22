@@ -14,7 +14,7 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex; /* flex */
   align-items: center; /* centraliza verticalmente */
-  justify-content: space-around; /* espaço entre itens e bordas */
+  justify-content: space-between; /* mudado para space-between - espaço entre itens e bordas */
 }
 
 .profile-image {
@@ -30,6 +30,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
 }
 
 button {
@@ -44,8 +45,24 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
 }
 
 ul {
   list-style-type: none;
+  display: flex; /* flex */
+  padding: 0;  /* removendo padding-inline-start: 40; */
+  gap: 16px;  /* espaço entre itens com links */
+  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
+}
+
+.esquerda { /* propriedades elementos esquerda */
+  border: 1px solid red;  /* borda para facilitar visualização do conteiner/item */
+  display: flex; /* flex */
+  gap: 16px;  /* espaço entre logo e links */
+  padding: 8px; /* padding cima = 0 / padding lados = 8px para cumprir exigência de espaçamento dos lados. */
+}
+
+.direita { /* propriedades elementos direita */
+  display: flex;
 }
