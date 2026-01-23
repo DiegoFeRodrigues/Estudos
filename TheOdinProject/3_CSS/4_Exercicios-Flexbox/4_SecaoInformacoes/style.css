@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; 
 }
 
 img {
@@ -10,22 +11,19 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
-  display: flex;  /* flex no titulo */
-  justify-content: center;  /* centraliza titulo */
 }
 
 /* propriedades conteiner pai */
 .conteinerPai {  
-  display: flex;  /* flex no pai (flex-direction: row por padrão) */
-  border: 1px solid red;  /* borda para facilitar vizualição de conteiner pai */
+  display: flex;  
+  justify-content: center; 
+  padding-top: 30px;  
+  gap: 60px;
 }
 
-/* propriedades conteiner filho */
+/* propriedade conteiner filho */
 .conteinerFilho {
-  display: flex;  /* flex no filho */
-  flex-direction: column;  /* direção do eixo mudado para column nos filhos */
-  align-items: center;  /* centraliza verticalmente dentro do conteiner filho */
-  border: 1px solid red;  /* borda para facilitar vizualição de conteiner filho */
+  max-width: 100px; /* tinha me esquecido que era obrigatório */
 }
 
 /* do not edit this footer */
