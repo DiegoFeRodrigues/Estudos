@@ -33,6 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0; /* evita que elemento fique todo espremido */
 }
 
 .close-button {
@@ -66,4 +67,15 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* div {
+  border: 1px solid red;
+} */
+
+.conteiner-interno {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+
 }
