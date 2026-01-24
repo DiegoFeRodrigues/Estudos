@@ -24,3 +24,23 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul {
+  border: 1px solid red;
+  list-style-type: none;  /* remove círculos das listas */
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #6c6c6c;
+}
