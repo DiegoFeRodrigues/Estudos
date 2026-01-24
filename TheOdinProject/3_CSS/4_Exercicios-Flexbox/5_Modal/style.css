@@ -75,12 +75,19 @@ button.cancel {
 
 .conteiner-interno {
   display: flex;
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
+  padding: 15px;
 }
 
 .cabecalho {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
