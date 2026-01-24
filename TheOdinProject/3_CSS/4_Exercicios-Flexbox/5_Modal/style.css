@@ -74,8 +74,13 @@ button.cancel {
 } */
 
 .conteiner-interno {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.cabecalho {
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
-
 }
