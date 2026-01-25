@@ -1,0 +1,29 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, div, ul, li {
+    border: 1px solid red;
+}
