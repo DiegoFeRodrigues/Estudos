@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,7 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-  padding: 5px;
+  padding: 5px 13px;
 }
 
 input {
@@ -30,14 +33,14 @@ input {
 ul {
   list-style-type: none;
   display: flex;
-  gap: 15px;
+  gap: 32px;
   padding: 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 10px;
+  padding: 0px 14px;
 }
 
 a {
@@ -58,4 +61,11 @@ a {
 .buttons {
   display: flex;
   gap: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  padding: 0px 14px;
 }
