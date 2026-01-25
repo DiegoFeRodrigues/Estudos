@@ -23,13 +23,33 @@ body {
 }
 
 .sidebar {
-  width: 300px;
+  width: 233px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+.sidebar-e-cards {
+  display: flex;
+  flex: 1;
+}
+
+ul, li {
+  list-style: none;
+  padding: 10px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div, ul, li {
+  border: 1px solid red;
 }
