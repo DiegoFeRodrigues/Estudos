@@ -42,3 +42,12 @@ a {
 /* body, div, ul, li {
     border: 1px solid red;
 } */
+
+.hero {
+    height: 200px;
+    background-color: #1F2937;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
