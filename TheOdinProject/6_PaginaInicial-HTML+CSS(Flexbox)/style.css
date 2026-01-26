@@ -43,11 +43,23 @@ a {
     border: 1px solid red;
 } */
 
-.hero {
-    height: 200px;
-    background-color: #1F2937;
+.hero, .mid, .inspiracao {
     display: flex;
-    color: white;
+    height: 200px;
     justify-content: space-around;
     align-items: center;
+}
+
+.hero {
+    background-color: #1F2937;
+    color: white;
+}
+
+.inspiracao {
+    background-color: #E5E7EB;
+}
+
+.nome {
+    display: flex;
+    justify-content: flex-end;
 }
