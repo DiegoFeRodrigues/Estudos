@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: roboto, sans-serif;
+    min-height: 100vh;
 }
 
 .header,
@@ -43,14 +44,14 @@ a {
     border: 1px solid red;
 } */
 
-.hero, .mid, .inspiracao {
+.hero, .mid, .inspiracao, .comecar, footer {
     display: flex;
     height: 200px;
-    justify-content: space-around;
+    justify-content: space-around;  /* ?! */
     align-items: center;
 }
 
-.hero {
+.hero, footer {
     background-color: #1F2937;
     color: white;
 }
@@ -62,4 +63,12 @@ a {
 .nome {
     display: flex;
     justify-content: flex-end;
+}
+
+.comecar {
+    height: 180px;
+}
+
+footer {
+    height: 55px;
 }
