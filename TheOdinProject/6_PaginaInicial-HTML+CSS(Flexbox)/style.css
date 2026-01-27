@@ -44,7 +44,7 @@ a {
     border: 1px solid red;
 } */
 
-.hero, .mid, .inspiracao, .comecar, footer {
+.hero, .meio, .inspiracao, .comecar, footer {
     display: flex;
     height: 200px;
     justify-content: center;  /* ?! */
@@ -120,6 +120,27 @@ a.link-entrar {
     flex: 1;
     max-width: 900px;
     justify-content: space-around;
+    padding: 0 20px;
+}
+
+.meio {
     border: 1px solid red;
-    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    flex: 1;
+}
+
+.header-meio {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.botoes-meio {
+    border: 1px solid red;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
