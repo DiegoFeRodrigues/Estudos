@@ -56,12 +56,6 @@ a {
     color: white;
 }
 
-.hero {
-    border: 1px solid red;
-    gap: 30px;
-    padding: 0 10px;
-}
-
 .inspiracao {
     background-color: #E5E7EB;
 }
@@ -85,21 +79,47 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
 }
 
 .textos-hero {
-    height: 200px;
-    border: 1px solid red;
-    width: 353px;
     gap: 10px;
 }
 
 .img-hero {
-    height: 191px;
+    max-height: 191px;
+    max-width: 100%;
+    height: auto;
 }
 
 .titulo-hero {
     font-size: 28px;
     font-weight: 900;
+    color: #F9FAF8;
+}
+
+.texto-hero {
+    font-size: 15px;
+    color: #E5E7EB;
+}
+
+.entrar {
+    padding: 4px 16px;
+    border-radius: 6px;
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+}
+
+a.link-entrar {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.conteiner-hero {
+    display: flex;
+    flex: 1;
+    max-width: 900px;
+    justify-content: space-around;
+    border: 1px solid red;
+    padding: 0 10px;
 }
