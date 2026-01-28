@@ -26,14 +26,11 @@ body {
 
 .header,
 ul {
-    display: flex;
     padding-top: 10px;
-    align-items: center;
 }
 
 .header {
     justify-content: space-around;
-    height: 60px;
     background-color: #1F2937;
 }
 
