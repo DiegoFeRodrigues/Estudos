@@ -57,7 +57,7 @@ a {
     border: 1px solid red;
 } */
 
-.inspiracao, .comecar, footer {
+.comecar, footer {
     display: flex;
     height: 200px;
     justify-content: center;  /* ?! */
@@ -69,12 +69,11 @@ a {
     color: white;
 }
 
-.inspiracao {
+.motivacional {
     background-color: #E5E7EB;
 }
 
 .nome {
-    display: flex;
     justify-content: flex-end;
 }
 
