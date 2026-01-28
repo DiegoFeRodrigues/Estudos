@@ -57,7 +57,7 @@ a {
     border: 1px solid red;
 } */
 
-.hero, .meio, .inspiracao, .comecar, footer {
+.meio, .inspiracao, .comecar, footer {
     display: flex;
     height: 200px;
     justify-content: center;  /* ?! */
@@ -129,8 +129,6 @@ a.link-entrar {
 }
 
 .conteiner-hero {
-    display: flex;
-    flex: 1;
     max-width: 900px;
     justify-content: space-around;
     padding: 0 20px;
