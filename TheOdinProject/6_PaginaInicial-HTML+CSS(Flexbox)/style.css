@@ -57,7 +57,7 @@ a {
     border: 1px solid red;
 } */
 
-.comecar, footer {
+footer {
     display: flex;
     height: 200px;
     justify-content: center;  /* ?! */
@@ -75,10 +75,6 @@ a {
 
 .nome {
     justify-content: flex-end;
-}
-
-.comecar {
-    height: 180px;
 }
 
 footer {
