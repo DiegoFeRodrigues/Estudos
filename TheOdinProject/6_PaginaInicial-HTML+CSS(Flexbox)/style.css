@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* propriedades mais utilizadas */
 .flex {
     display: flex;
 }
@@ -18,20 +19,11 @@
     flex: 1;
 }
 
+/* body e seletores por tipo (<ul> e <a>) */
 body {
     margin: 0;
     font-family: roboto, sans-serif;
     min-height: 100vh;
-}
-
-.header,
-ul {
-    padding-top: 10px;
-}
-
-.header {
-    justify-content: space-around;
-    background-color: #1F2937;
 }
 
 ul {
@@ -40,49 +32,42 @@ ul {
     margin: 0;
 }
 
-.links-header {
-    gap: 14px;
-}
 a {
     text-decoration: none;
     font-size: 16px;
     color: #E5E7EB;
 }
 
+/* header topo */
+.header {
+    padding-top: 10px;
+    justify-content: space-around;
+    background-color: #1F2937;
+}
+
+.links-header {
+    gap: 14px;
+}
+
 .logo {
     height: 58px;
 }
 
-/* body, div, ul, li {
-    border: 1px solid red;
-} */
-
-.hero, footer {
+/* hero */
+.hero, footer { /* compartilhado com footer */
     background-color: #1F2937;
     color: white;
 }
 
-.motivacional {
-    background-color: #E5E7EB;
-}
-
-.nome {
-    justify-content: flex-end;
-}
-
-footer {
-    max-height: 55px;
+.conteiner-hero {
+    max-width: 900px;
+    justify-content: space-around;
+    padding: 0 20px;
 }
 
 .textos-hero {
     gap: 10px;
     align-items: flex-start;
-}
-
-.img-hero {
-    max-height: 191px;
-    max-width: 100%;
-    height: auto;
 }
 
 .titulo-hero {
@@ -91,9 +76,15 @@ footer {
     color: #F9FAF8;
 }
 
-.texto-hero {
+.texto-secundario-hero {
     font-size: 15px;
     color: #E5E7EB;
+}
+
+.img-hero {
+    max-height: 191px;
+    max-width: 100%;
+    height: auto;
 }
 
 .entrar {
@@ -109,12 +100,7 @@ a.link-entrar {
     color: white;
 }
 
-.conteiner-hero {
-    max-width: 900px;
-    justify-content: space-around;
-    padding: 0 20px;
-}
-
+/* meio - trilhas */
 .meio {
     padding: 20px;
 }
@@ -122,4 +108,18 @@ a.link-entrar {
 .header-meio {
     font-size: 19px;
     font-weight: 600;
+}
+
+/* frase motivacional */
+.motivacional {
+    background-color: #E5E7EB;
+}
+
+.nome {
+    justify-content: flex-end;
+}
+
+/* footer */
+footer {
+    max-height: 55px;
 }
