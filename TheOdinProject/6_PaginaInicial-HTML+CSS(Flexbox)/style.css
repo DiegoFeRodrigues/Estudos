@@ -74,16 +74,9 @@ footer {
     max-height: 55px;
 }
 
-.textos-hero, 
-.texto-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .textos-hero {
     gap: 10px;
+    align-items: flex-start;
 }
 
 .img-hero {
