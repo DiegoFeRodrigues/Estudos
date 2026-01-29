@@ -19,7 +19,7 @@
     flex: 1;
 }
 
-/* body e seletores por tipo (<ul> e <a>) */
+/* body e seletores por tipo (<ul>, <a>, button e links os botoes) */
 body {
     margin: 0;
     font-family: roboto, sans-serif;
@@ -36,6 +36,19 @@ a {
     text-decoration: none;
     font-size: 16px;
     color: #E5E7EB;
+}
+
+button {
+    padding: 4px 16px;
+    border-radius: 6px;
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+}
+
+a.link-botoes {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
 }
 
 /* header topo */
@@ -88,23 +101,10 @@ a {
     height: auto;
 }
 
-.entrar {
-    padding: 4px 16px;
-    border-radius: 6px;
-    background-color: #3882f6;
-    border: 1px solid #3882f6;
-}
-
-a.link-entrar {
-    font-size: 14px;
-    font-weight: 700;
-    color: white;
-}
-
 /* meio - trilhas */
 .meio {
     padding: 10px;
-    max-height: 215px;
+    max-height: 245px;
 }
 
 .header-meio,
@@ -117,7 +117,7 @@ a.link-entrar {
     font-weight: 600;
 }
 
-.caixas-meio div{
+#caixa{
     padding: 47px;
     border-radius: 6px;
     background-color: #1F2937;
@@ -133,6 +133,15 @@ a.link-entrar {
     background-size: cover; /* imagem cobre todo o conteiner */
     background-repeat: no-repeat;   /* evita tiling (imagem ser repetida na pagina) */
     background-position: center;    /* centraliza */
+}
+
+.texto-caixa {
+    font-style: italic;
+    margin: 2px 0px;
+}
+
+.botao-explorar {
+    padding: 4px 11px;
 }
 
 /* frase motivacional */
