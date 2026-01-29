@@ -121,11 +121,11 @@ a.link-botoes {
     padding: 47px;
     border-radius: 6px;
     background-color: #1F2937;
-    border: 2px solid #3882f6;
+    border: 3px solid #3882f6;
 }
 
 .caixas-meio {
-    gap: 83px;
+    gap: 27px;
 }
 
 .imgs-caixas {
@@ -153,6 +153,24 @@ a.link-botoes {
 
 .botao-explorar {
     padding: 4px 11px;
+}
+
+.seta {
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #E5E7EB;
+    height: 33px;
+    width: 33px;
+    align-self: center;
+    margin-bottom: 50px;
+    font-size: 43px;
+    color: #3882f6;
+    border: 1px solid #3882f6;
+}
+
+.ou {
+    font-size: 19px;
+    font-weight: 600;
 }
 
 /* frase motivacional */
