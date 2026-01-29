@@ -138,6 +138,14 @@ a.link-botoes {
     background-image: url(images/fundamentos-odin.png);
 }
 
+.javascript {
+    background-image: url(images/JavaScript.png);
+}
+
+.ruby {
+    background-image: url(images/ruby.png);
+}
+
 .texto-caixa {
     font-style: italic;
     margin: 2px 0px;
