@@ -128,11 +128,14 @@ a.link-botoes {
     gap: 83px;
 }
 
+.imgs-caixas {
+    background-size: cover; /* imagem cobre todo o conteiner */
+    background-repeat: no-repeat;   /* evita tiling (imagem ser repetida (ficar "pulando") na pagina) */
+    background-position: center;    /* centraliza */
+}
+
 .fundamentos {
     background-image: url(images/fundamentos-odin.png);
-    background-size: cover; /* imagem cobre todo o conteiner */
-    background-repeat: no-repeat;   /* evita tiling (imagem ser repetida na pagina) */
-    background-position: center;    /* centraliza */
 }
 
 .texto-caixa {
