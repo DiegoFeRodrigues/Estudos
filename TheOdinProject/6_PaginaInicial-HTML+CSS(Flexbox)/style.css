@@ -104,7 +104,7 @@ a.link-entrar {
 /* meio - trilhas */
 .meio {
     padding: 10px;
-    max-height: 185px;
+    max-height: 215px;
 }
 
 .header-meio,
@@ -118,7 +118,7 @@ a.link-entrar {
 }
 
 .caixas-meio div{
-    padding: 37px;
+    padding: 47px;
     border-radius: 6px;
     background-color: #1F2937;
     border: 2px solid #3882f6;
@@ -126,6 +126,13 @@ a.link-entrar {
 
 .caixas-meio {
     gap: 83px;
+}
+
+.fundamentos {
+    background-image: url(images/fundamentos-odin.png);
+    background-size: cover; /* imagem cobre todo o conteiner */
+    background-repeat: no-repeat;   /* evita tiling (imagem ser repetida na pagina) */
+    background-position: center;    /* centraliza */
 }
 
 /* frase motivacional */
