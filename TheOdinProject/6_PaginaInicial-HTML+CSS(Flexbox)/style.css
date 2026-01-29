@@ -57,12 +57,13 @@ a {
 .hero, footer { /* compartilhado com footer */
     background-color: #1F2937;
     color: white;
+    max-height: 233px;
 }
 
 .conteiner-hero {
     max-width: 900px;
     justify-content: space-around;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .textos-hero {
@@ -102,12 +103,29 @@ a.link-entrar {
 
 /* meio - trilhas */
 .meio {
-    padding: 20px;
+    padding: 10px;
+    max-height: 185px;
+}
+
+.header-meio,
+.texto-meio {
+    margin-bottom: 10px;
 }
 
 .header-meio {
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 600;
+}
+
+.caixas-meio div{
+    padding: 37px;
+    border-radius: 6px;
+    background-color: #1F2937;
+    border: 2px solid #3882f6;
+}
+
+.caixas-meio {
+    gap: 83px;
 }
 
 /* frase motivacional */
