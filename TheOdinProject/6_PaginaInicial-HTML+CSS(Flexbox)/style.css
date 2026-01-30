@@ -188,6 +188,21 @@ a.link-botoes {
     justify-content: flex-end;
 }
 
+/* botao discord */
+.discord {
+    padding: 10px;
+    max-height: 154px;
+}
+
+.botao-discord {
+    padding: 36px;
+    background-color: #3882f6;
+    border-radius: 5px;
+    color: white;
+    justify-self: center;
+    max-width: 850px;
+}
+
 /* footer */
 footer {
     max-height: 55px;
