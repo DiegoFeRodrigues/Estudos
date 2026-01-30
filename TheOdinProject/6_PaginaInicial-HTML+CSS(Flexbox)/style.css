@@ -85,13 +85,13 @@ a.link-botoes {
 }
 
 .titulo-hero {
-    font-size: 28px;
+    font-size: 31px;
     font-weight: 900;
     color: #F9FAF8;
 }
 
 .texto-secundario-hero {
-    font-size: 15px;
+    font-size: 17px;
     color: #E5E7EB;
 }
 
@@ -117,11 +117,16 @@ a.link-botoes {
     font-weight: 600;
 }
 
+.texto-meio {
+    font-size: 18px;
+}
+
 #caixa{
     padding: 47px;
     border-radius: 6px;
     background-color: #1F2937;
     border: 3px solid #3882f6;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.3);
 }
 
 .caixas-meio {
@@ -147,6 +152,7 @@ a.link-botoes {
 }
 
 .texto-caixa {
+    font-size: 14px;
     font-style: italic;
     margin: 2px 0px;
 }
@@ -156,13 +162,13 @@ a.link-botoes {
 }
 
 .seta {
-    padding: 3px;
-    border-radius: 50%;
+    padding: 2px 7px;
+    border-radius: 5px;
     background-color: #E5E7EB;
     height: 33px;
     width: 33px;
     align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     font-size: 43px;
     color: #3882f6;
     border: 1px solid #3882f6;
