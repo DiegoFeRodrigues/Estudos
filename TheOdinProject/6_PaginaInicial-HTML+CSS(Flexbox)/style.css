@@ -189,18 +189,31 @@ a.link-botoes {
 }
 
 /* botao discord */
-.discord {
+.discord-conteiner {
     padding: 10px;
-    max-height: 154px;
+    max-height: 144px;
 }
 
-.botao-discord {
-    padding: 36px;
+.discord {
+    padding: 27px;
     background-color: #3882f6;
     border-radius: 5px;
     color: white;
-    justify-self: center;
     max-width: 850px;
+    justify-content: space-around;
+}
+
+.header-discord {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.botao-discord {
+    border: 1px solid white;
+}
+
+.logo-discord {
+    max-height: 13px;
 }
 
 /* footer */
