@@ -179,12 +179,21 @@ a.link-botoes {
     font-weight: 600;
 }
 
-/* frase motivacional */
-.motivacional {
+/* frase inspiracao */
+.inspiracao {
     background-color: #E5E7EB;
+    padding: 10px;
+}
+
+.citacao {
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .nome {
+    font-size: 17px;
+    font-weight: 700;
     justify-content: flex-end;
 }
 
