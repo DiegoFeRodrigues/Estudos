@@ -92,7 +92,7 @@ a.link-botoes {
 
 .texto-secundario-hero {
     font-size: 17px;
-    color: #E5E7EB;
+    color:#E5E7EB;
 }
 
 .img-hero {
@@ -228,5 +228,7 @@ a.link-botoes {
 
 /* footer */
 footer {
-    max-height: 55px;
+    max-height: 53px;
+    font-size: 0.75rem;
+    color: #E5E7EB;
 }
