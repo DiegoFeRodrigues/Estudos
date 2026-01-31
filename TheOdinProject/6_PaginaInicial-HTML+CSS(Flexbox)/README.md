@@ -19,3 +19,9 @@ https://openclipart.org/
 ### Discord logo image:
 The Discord logo used in button at bottom section belongs to Discord:
 https://discord.com/branding 
+
+## Landing page expected - Example image:
+![alt text](images/Example-Image.png)
+
+## Result:
+![alt text](images/Result.png)
