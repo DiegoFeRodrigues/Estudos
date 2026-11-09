@@ -1,14 +1,29 @@
+/*
+. {
+
+}
+*/
 
 body {
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   justify-content: center;
   margin: 20% auto;
 }
 
-.fundo {
+.fundoCalc {
   width: 350px;
   height: 500px;
   background-color: white;
+  border-radius: 10px;
+}
+
+.borda {
+  border: 2px solid red;
+}
+
+.conteinerDisplay {
+  height: 100px;
+  margin: 5%;
   border-radius: 10px;
 }
