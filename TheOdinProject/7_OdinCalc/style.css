@@ -1,12 +1,8 @@
-/*
-. {
-
-}
-*/
 
 .borda {
   border: 2px solid black;
   border-radius: 10px;
+  margin: 5%;
 }
 
 .flex {
@@ -15,7 +11,6 @@
 
 .conteiner {
   width: 300px;
-  margin: 5%;
 }
 
 body {
@@ -28,7 +23,7 @@ body {
   width: 350px;
   height: 500px;
   background-color: dimgrey;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
@@ -38,14 +33,17 @@ body {
 }
 
 .displayCalc {
-  margin: 3%;
   border-radius: 0px;
 }
 
 .conteinerTeclas {
   height: 300px;
 }
+
 .clear {
   height: 50px;
-  margin: 4%;
+}
+
+.conteinerNum {
+  height: 200px;
 }
