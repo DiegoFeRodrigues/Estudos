@@ -6,6 +6,7 @@
 
 .borda {
   border: 2px solid black;
+  border-radius: 10px;
 }
 
 .flex {
@@ -27,7 +28,6 @@ body {
   width: 350px;
   height: 500px;
   background-color: dimgrey;
-  border-radius: 10px;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
@@ -35,14 +35,17 @@ body {
 
 .conteinerDisplay {
   height: 100px;
-  border-radius: 10px;
 }
 
 .displayCalc {
   margin: 3%;
+  border-radius: 0px;
 }
 
 .conteinerTeclas {
   height: 300px;
-  border-radius: 10px;
+}
+.clear {
+  height: 50px;
+  margin: 4%;
 }
