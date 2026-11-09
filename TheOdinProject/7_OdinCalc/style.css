@@ -4,35 +4,45 @@
 }
 */
 
+.borda {
+  border: 2px solid black;
+}
+
 .flex {
   display: flex;
 }
 
+.conteiner {
+  width: 300px;
+  margin: 5%;
+}
+
 body {
-  /* background-color: black; */
+  background-color: slategrey;
   justify-content: center;
-  margin: 20% auto;
 }
 
 .fundoCalc {
+  margin: 20% auto;
   width: 350px;
   height: 500px;
-  background-color: white;
+  background-color: dimgrey;
   border-radius: 10px;
-}
-
-.borda {
-  border: 2px solid red;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .conteinerDisplay {
   height: 100px;
-  margin: 5%;
   border-radius: 10px;
-  justify-content: center;
 }
 
 .displayCalc {
-  width: 285px;
   margin: 3%;
+}
+
+.conteinerTeclas {
+  height: 300px;
+  border-radius: 10px;
 }
