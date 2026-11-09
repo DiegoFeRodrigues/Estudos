@@ -2,7 +2,10 @@
 .borda {
   border: 2px solid black;
   border-radius: 10px;
-  margin: 5%;
+}
+
+.margem {
+    margin: 5%;
 }
 
 .flex {
@@ -21,7 +24,7 @@ body {
 .fundoCalc {
   margin: 20% auto;
   width: 350px;
-  height: 500px;
+  height: 600px;
   background-color: dimgrey;
   justify-content: space-evenly;
   align-items: center;
@@ -36,14 +39,27 @@ body {
   border-radius: 0px;
 }
 
-.conteinerTeclas {
-  height: 300px;
-}
-
 .clear {
   height: 50px;
 }
 
 .conteinerNum {
-  height: 200px;
+  justify-content: space-between;
+  padding: 0px;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+li {
+  list-style: none;
+}
+
+.tecla {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+}
+
+.zero {
+  width: 190px;
 }
