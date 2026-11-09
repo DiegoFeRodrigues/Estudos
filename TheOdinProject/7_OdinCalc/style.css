@@ -1,4 +1,14 @@
 
 body {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 20% auto;
+}
+
+.fundo {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
 }
