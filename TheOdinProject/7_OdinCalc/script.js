@@ -34,9 +34,15 @@ const conteinerNumeros = document.querySelector(".conteinerNum");
 const display = document.querySelector(".displayCalc")
 
 conteinerNumeros.addEventListener("click", (evento) => {
-  const numero = document.createElement("div");
-  numero.innerText = evento.target.innerText
-  display.appendChild(numero);
+  // testes:
+  //console.log(evento.target.classList);
+  //console.log("tecla" in evento.target.classList);
+  //console.log(evento.target.classList[1]);
+  if (evento.target.classList[1] == "tecla") {
+    const numero = document.createElement("div");
+    numero.innerText = evento.target.innerText
+    display.appendChild(numero);
+  }
 });
 
 console.log("Soma:");
