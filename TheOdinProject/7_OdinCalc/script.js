@@ -29,6 +29,13 @@ function operar(n1, operador, n2) {
   return `${valor1} ${operador} ${valor2} = ${operadores[operador]}`;
 }
 
+const conteinerNumero = document.querySelector(".conteinerNum");
+
+conteinerNumero.addEventListener("click", (evento) => {
+  console.log(evento.target.innerText);
+  console.log(typeof(evento.target.innerText));
+})
+
 console.log("Soma:");
 operador = "+";
 console.log(operar(valor1, operador, valor2));
