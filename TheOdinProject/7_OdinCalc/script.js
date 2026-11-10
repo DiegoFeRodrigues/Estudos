@@ -12,7 +12,7 @@ function divide(n1, n2) {
   return n1 / n2;
 }
 
-const valor1 = 10;
+let valor1;
 let operador;
 const valor2 = 5;
 
@@ -34,16 +34,19 @@ const conteinerNumeros = document.querySelector(".conteinerNum");
 const display = document.querySelector(".displayCalc")
 
 conteinerNumeros.addEventListener("click", (evento) => {
-  // testes:
-  //console.log(evento.target.classList);
-  //console.log("tecla" in evento.target.classList);
-  //console.log(evento.target.classList[1]);
+  const conteudoClicado = evento.target.innerText;
   if (evento.target.classList[1] == "tecla") {
-    const numero = document.createElement("div");
-    numero.innerText = evento.target.innerText
-    display.appendChild(numero);
+    const valores1 = document.createElement("div");
+    valores1.innerText = conteudoClicado;
+    display.appendChild(valores1);
+    valor1 = display.textContent;
   }
+  console.log("dentro do evento");
+  console.log(parseInt(valor1));
 });
+
+console.log("fora do evento");
+console.log(parseInt(valor1));
 
 console.log("Soma:");
 operador = "+";
