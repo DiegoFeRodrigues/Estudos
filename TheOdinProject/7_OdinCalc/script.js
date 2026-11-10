@@ -29,12 +29,15 @@ function operar(n1, operador, n2) {
   return `${valor1} ${operador} ${valor2} = ${operadores[operador]}`;
 }
 
-const conteinerNumero = document.querySelector(".conteinerNum");
+const conteinerNumeros = document.querySelector(".conteinerNum");
 
-conteinerNumero.addEventListener("click", (evento) => {
-  console.log(evento.target.innerText);
-  console.log(typeof(evento.target.innerText));
-})
+const display = document.querySelector(".displayCalc")
+
+conteinerNumeros.addEventListener("click", (evento) => {
+  const numero = document.createElement("div");
+  numero.innerText = evento.target.innerText
+  display.appendChild(numero);
+});
 
 console.log("Soma:");
 operador = "+";
