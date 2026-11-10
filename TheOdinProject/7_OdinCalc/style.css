@@ -16,18 +16,23 @@
   width: 300px;
 }
 
+.centraliza {
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: slategrey;
-  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 .fundoCalc {
   margin: 20% auto;
-  width: 350px;
+  width: 370px;
   height: 600px;
   background-color: dimgrey;
   justify-content: space-evenly;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -41,6 +46,7 @@ body {
 
 .clear {
   height: 50px;
+  width: 231px;
 }
 
 .conteinerNum {
@@ -61,5 +67,5 @@ li {
 }
 
 .zero {
-  width: 190px;
+  width: 169px;
 }
