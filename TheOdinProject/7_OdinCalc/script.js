@@ -37,17 +37,32 @@ const conteinerValores1 = document.createElement("div");
 conteinerValores1.classList = "conteinerValores1";
 conteinerValores1.style.display = "flex";
 
+const conteinerOperador = document.createElement("div");
+conteinerOperador.classList = "conteinerOperador";
+conteinerOperador.style.display = "flex";
+
 conteinerNumeros.addEventListener("click", (evento) => {
   const conteudoClicado = evento.target.innerText;
+  if (conteudoClicado == "+") {
+      const operadorOp = document.createElement("div");
+      operadorOp.innerText = conteudoClicado;
+      conteinerOperador.appendChild(operadorOp);
+      display.appendChild(conteinerOperador);
+      operadorOp = conteinerOperador.textContent;
+    }
   if (evento.target.classList[1] == "tecla") {
     const valores1 = document.createElement("div");
-    valores1.innerText = conteudoClicado;
+    valores1.innerText = parseInt(conteudoClicado);
     conteinerValores1.appendChild(valores1);
     display.appendChild(conteinerValores1);
-    valor1 = conteinerValores1.textContent;
+    valor1 = parseInt(conteinerValores1.textContent);
+
+    
   }
   console.log("dentro do evento");
-  console.log(parseInt(valor1));
+  console.log(valor1);
+  console.log(typeof (conteudoClicado));
+  console.log()
 });
 
 console.log("fora do evento");
