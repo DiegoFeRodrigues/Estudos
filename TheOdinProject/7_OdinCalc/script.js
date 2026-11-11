@@ -33,13 +33,18 @@ const conteinerNumeros = document.querySelector(".conteinerNum");
 
 const display = document.querySelector(".displayCalc")
 
+const conteinerValores1 = document.createElement("div");
+conteinerValores1.classList = "conteinerValores1";
+conteinerValores1.style.display = "flex";
+
 conteinerNumeros.addEventListener("click", (evento) => {
   const conteudoClicado = evento.target.innerText;
   if (evento.target.classList[1] == "tecla") {
     const valores1 = document.createElement("div");
     valores1.innerText = conteudoClicado;
-    display.appendChild(valores1);
-    valor1 = display.textContent;
+    conteinerValores1.appendChild(valores1);
+    display.appendChild(conteinerValores1);
+    valor1 = conteinerValores1.textContent;
   }
   console.log("dentro do evento");
   console.log(parseInt(valor1));
