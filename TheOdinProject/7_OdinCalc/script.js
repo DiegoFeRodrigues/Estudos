@@ -26,7 +26,7 @@ function operar(n1, operador, n2) {
   if (!operadores[operador]) {
     return `Operador inválido: ${operador}.`;
   }
-  return `${valor1} ${operador} ${valor2} = ${operadores[operador]}`;
+  return operadores[operador];
 }
 
 const conteinerNumeros = document.querySelector(".conteinerNum");
@@ -49,11 +49,17 @@ conteinerNumeros.addEventListener("click", (evento) => {
     if (conteudoBotaoClicado == "+") {
       listaOperadores.push(conteudoBotaoClicado)
     }
+
+    const listaValores = display.textContent.split(/[+=]/);
+
+    if (conteudoBotaoClicado == "=") {
+      console.log(operar(parseInt(listaValores[0]), listaOperadores[0], parseInt(listaValores[1])));
+    }
+
+    console.log("dentro do evento");
+    console.log(`lista valores: ${listaValores}`);
+    console.log(`lista operadores: ${listaOperadores}`);
   }
-  console.log("dentro do evento");
-  console.log(display.textContent);
-  console.log(display.textContent.split("+"));
-  console.log(listaOperadores);
 });
 
 console.log("fora do evento");
