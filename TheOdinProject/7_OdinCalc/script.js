@@ -50,10 +50,12 @@ conteinerNumeros.addEventListener("click", (evento) => {
       listaOperadores.push(conteudoBotaoClicado)
     }
 
-    const listaValores = display.textContent.split(/[+=]/);
+    const listaValores = display.textContent.split(/[+=]/)
+      .map(item => Number(item))
+    ;
 
     if (conteudoBotaoClicado == "=") {
-      console.log(operar(parseInt(listaValores[0]), listaOperadores[0], parseInt(listaValores[1])));
+      console.log(operar(listaValores[0], listaOperadores[0], listaValores[1]));
     }
 
     console.log("dentro do evento");
