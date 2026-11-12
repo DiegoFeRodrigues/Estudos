@@ -62,29 +62,3 @@ conteinerNumeros.addEventListener("click", (evento) => {
   }
 });
 
-console.log("fora do evento");
-console.log(parseInt(valor1));
-
-console.log("Soma:");
-operador = "+";
-console.log(operar(valor1, operador, valor2));
-
-console.log("Subtração:");
-operador = "-";
-console.log(operar(valor1, operador, valor2));
-
-console.log("Multiplicação:");
-operador = "*";
-console.log(operar(valor1, operador, valor2));
-
-console.log("Divisão:");
-operador = "/";
-console.log(operar(valor1, operador, valor2));
-
-console.log("Erros:");
-operador = "$"
-console.log(operar(valor1, operador, valor2));
-
-operador = "@"
-console.log(operar(valor1, operador, valor2));
-
