@@ -55,7 +55,12 @@ conteinerNumeros.addEventListener("click", (evento) => {
     ;
 
     if (conteudoBotaoClicado == "=") {
-      console.log(operar(listaValores[0], listaOperadores[0], listaValores[1]));
+      const resultado = document.createElement("div");
+      const valores = document.querySelectorAll(".valor");
+      resultado.classList = "resultado";
+      valores.forEach(item => display.removeChild(item));
+      resultado.innerText = operar(listaValores[0], listaOperadores[0], listaValores[1]);
+      display.appendChild(resultado);
     }
 
     console.log("dentro do evento");
