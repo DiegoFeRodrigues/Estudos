@@ -43,23 +43,38 @@ conteinerOperador.style.display = "flex";
 
 conteinerNumeros.addEventListener("click", (evento) => {
   const conteudoClicado = evento.target.innerText;
-  if (conteudoClicado == "+") {
+
+  const listaOperacao = [];
+
+  if (evento.target.classList[1] == "tecla") {
+    const valores1 = document.createElement("div");
+    const valores1Definitivos = document.createElement("div");
+    valores1.innerText = parseInt(conteudoClicado);
+    if (!isNaN(valores1.innerText)) {
+      conteinerValores1.appendChild(valores1);
+    }
+    display.appendChild(conteinerValores1);
+    valor1 = parseInt(conteinerValores1.textContent);
+
+    if (conteudoClicado == "+") {
+
+      listaOperacao.push(valor1);
+      display.removeChild(conteinerValores1);
+
+      valores1Definitivos.innerText = valor1;
+
+      display.appendChild(valores1Definitivos);
+
       const operadorOp = document.createElement("div");
       operadorOp.innerText = conteudoClicado;
       conteinerOperador.appendChild(operadorOp);
       display.appendChild(conteinerOperador);
-      operadorOp = conteinerOperador.textContent;
+      operador = conteinerOperador.textContent;
+      listaOperacao.push(operador);
     }
-  if (evento.target.classList[1] == "tecla") {
-    const valores1 = document.createElement("div");
-    valores1.innerText = parseInt(conteudoClicado);
-    conteinerValores1.appendChild(valores1);
-    display.appendChild(conteinerValores1);
-    valor1 = parseInt(conteinerValores1.textContent);
-
-    
   }
   console.log("dentro do evento");
+  console.log(listaOperacao);
   console.log(valor1);
   console.log(typeof (conteudoClicado));
   console.log()
