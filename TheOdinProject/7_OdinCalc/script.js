@@ -33,53 +33,27 @@ const conteinerNumeros = document.querySelector(".conteinerNum");
 
 const display = document.querySelector(".displayCalc")
 
+const listaOperadores = [];
+
 conteinerNumeros.addEventListener("click", (evento) => {
-  const conteudoClicado = evento.target.innerText;
+  const botaoClicado = document.createElement("div");
+  botaoClicado.classList = "valor";
 
-  const listaOperacao = [];
-
-  const conteinerValores1 = document.createElement("div");
-  conteinerValores1.classList = "conteinerValores1";
-  conteinerValores1.style.display = "flex";
-
-  const conteinerOperador = document.createElement("div");
-  conteinerOperador.classList = "conteinerOperador";
-  conteinerOperador.style.display = "flex";
-
+  const conteudoBotaoClicado = evento.target.innerText;
 
   if (evento.target.classList[1] == "tecla") {
-    const valores1 = document.createElement("div");
-    const valores1Definitivos = document.createElement("div");
-    valores1.innerText = parseInt(conteudoClicado);
-    if (!isNaN(valores1.innerText)) {
-      conteinerValores1.appendChild(valores1);
-    }
-    display.appendChild(conteinerValores1);
-    valor1 = parseInt(conteinerValores1.textContent);
+    botaoClicado.innerText = conteudoBotaoClicado;
 
-    if (conteudoClicado == "+") {
+    display.appendChild(botaoClicado);
 
-      listaOperacao.push(valor1);
-      display.removeChild(conteinerValores1);
-
-      valores1Definitivos.innerText = valor1;
-
-     if (!isNaN(valores1.innerText)) {
-      display.appendChild(valores1Definitivos);
-    }
-
-      const operadorOp = document.createElement("div");
-      operadorOp.innerText = conteudoClicado;
-      conteinerOperador.appendChild(operadorOp);
-      display.appendChild(conteinerOperador);
-      operador = conteinerOperador.textContent;
-      listaOperacao.push(operador);
+    if (conteudoBotaoClicado == "+") {
+      listaOperadores.push(conteudoBotaoClicado)
     }
   }
   console.log("dentro do evento");
   console.log(display.textContent);
   console.log(display.textContent.split("+"));
-  console.log(operador);
+  console.log(listaOperadores);
 });
 
 console.log("fora do evento");
