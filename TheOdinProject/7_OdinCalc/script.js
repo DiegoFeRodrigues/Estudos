@@ -33,18 +33,19 @@ const conteinerNumeros = document.querySelector(".conteinerNum");
 
 const display = document.querySelector(".displayCalc")
 
-const conteinerValores1 = document.createElement("div");
-conteinerValores1.classList = "conteinerValores1";
-conteinerValores1.style.display = "flex";
-
-const conteinerOperador = document.createElement("div");
-conteinerOperador.classList = "conteinerOperador";
-conteinerOperador.style.display = "flex";
-
 conteinerNumeros.addEventListener("click", (evento) => {
   const conteudoClicado = evento.target.innerText;
 
   const listaOperacao = [];
+
+  const conteinerValores1 = document.createElement("div");
+  conteinerValores1.classList = "conteinerValores1";
+  conteinerValores1.style.display = "flex";
+
+  const conteinerOperador = document.createElement("div");
+  conteinerOperador.classList = "conteinerOperador";
+  conteinerOperador.style.display = "flex";
+
 
   if (evento.target.classList[1] == "tecla") {
     const valores1 = document.createElement("div");
@@ -63,7 +64,9 @@ conteinerNumeros.addEventListener("click", (evento) => {
 
       valores1Definitivos.innerText = valor1;
 
+     if (!isNaN(valores1.innerText)) {
       display.appendChild(valores1Definitivos);
+    }
 
       const operadorOp = document.createElement("div");
       operadorOp.innerText = conteudoClicado;
@@ -74,10 +77,9 @@ conteinerNumeros.addEventListener("click", (evento) => {
     }
   }
   console.log("dentro do evento");
-  console.log(listaOperacao);
-  console.log(valor1);
-  console.log(typeof (conteudoClicado));
-  console.log()
+  console.log(display.textContent);
+  console.log(display.textContent.split("+"));
+  console.log(operador);
 });
 
 console.log("fora do evento");
