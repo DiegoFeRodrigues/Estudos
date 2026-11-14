@@ -50,9 +50,10 @@ conteinerNumeros.addEventListener("click", (evento) => {
       listaOperadores.push(conteudoBotaoClicado)
     }
 
-    const listaValores = display.textContent.split(/[+=]/)
-      .map(item => Number(item))
-    ;
+    const listaValores = display
+      .textContent
+      .split(/[+=]/)
+      .map(item => Number(item));
 
     if (conteudoBotaoClicado == "=") {
       const resultado = document.createElement("div");
@@ -62,15 +63,9 @@ conteinerNumeros.addEventListener("click", (evento) => {
       resultado.innerText = operar(listaValores[0], listaOperadores[0], listaValores[1]);
       display.appendChild(resultado);
 
-      console.log("Lista com zero:");
-      console.log(listaValores);
-
       listaValores.forEach(function(item) {
         if (item == "") { listaValores.pop(item); }
-     });
-
-      console.log("Lista sem zero:");
-      console.log(listaValores);
+      });
     }
 
     console.log("dentro do evento");
