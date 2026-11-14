@@ -61,6 +61,16 @@ conteinerNumeros.addEventListener("click", (evento) => {
       valores.forEach(item => display.removeChild(item));
       resultado.innerText = operar(listaValores[0], listaOperadores[0], listaValores[1]);
       display.appendChild(resultado);
+
+      console.log("Lista com zero:");
+      console.log(listaValores);
+
+      listaValores.forEach(function(item) {
+        if (item == "") { listaValores.pop(item); }
+     });
+
+      console.log("Lista sem zero:");
+      console.log(listaValores);
     }
 
     console.log("dentro do evento");
