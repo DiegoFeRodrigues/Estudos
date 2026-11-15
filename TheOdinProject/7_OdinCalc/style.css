@@ -82,3 +82,9 @@ li {
 .zero {
   width: 180px;
 }
+
+.conteinerOperadores {
+  flex-direction: column;
+  margin: 5% 5% 5% 0;
+  height: 303px;
+}
