@@ -14,7 +14,7 @@ function divide(n1, n2) {
 
 let valor1;
 let operador;
-const valor2 = 5;
+let valor2;
 
 function operar(n1, operador, n2) {
   const operadores = {
@@ -52,8 +52,9 @@ conteinerNumeros.addEventListener("click", (evento) => {
 
     const listaValores = display
       .textContent
-      .split(/[+=]/)
-      .map(item => Number(item));
+      .split(/[+=\-]/)
+      .map(item => Number(item))
+    ;
 
     if (conteudoBotaoClicado == "=") {
       const resultado = document.createElement("div");
@@ -83,13 +84,21 @@ conteinerNumeros.addEventListener("click", (evento) => {
         if (item == undefined) { expressao.pop(item); }
       });
 
-      //expressao.pop();
-
       if (expressao.length < 3) { console.log("Erro"); }
 
-      console.log(expressao);
+      valor1 = expressao[0]
+      let acumulador = valor1;
 
-      //console.log(operar(expressao[0], expressao[1], expressao[2]));
+      for (let indice = 1; indice < expressao.length; indice += 2) {
+        operador = expressao[indice];
+        valor2 = expressao[indice + 1];
+
+        acumulador = operar(acumulador, operador, valor2);
+      }
+
+      console.log(acumulador);
+
+      console.log(expressao);
     }
 
     //console.log("dentro do evento");
