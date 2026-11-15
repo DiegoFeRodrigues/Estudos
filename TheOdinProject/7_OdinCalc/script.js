@@ -66,11 +66,35 @@ conteinerNumeros.addEventListener("click", (evento) => {
       listaValores.forEach(function(item) {
         if (item == "") { listaValores.pop(item); }
       });
+
+      const expressao = []
+      const maiorLista = Math.max(listaValores.length, listaOperadores.length);
+
+      for (let i = 0; i < maiorLista; i++) {
+        if (i < listaValores.length) {
+          expressao.push(listaValores[i]);
+        }
+        if (i < listaOperadores.length) {
+          expressao.push(listaOperadores[i]);
+        }
+      }
+
+      expressao.forEach(function(item) {
+        if (item == undefined) { expressao.pop(item); }
+      });
+
+      //expressao.pop();
+
+      if (expressao.length < 3) { console.log("Erro"); }
+
+      console.log(expressao);
+
+      //console.log(operar(expressao[0], expressao[1], expressao[2]));
     }
 
-    console.log("dentro do evento");
-    console.log(`lista valores: ${listaValores}`);
-    console.log(`lista operadores: ${listaOperadores}`);
+    //console.log("dentro do evento");
+    //console.log(`lista valores: ${listaValores}`);
+    //console.log(`lista operadores: ${listaOperadores}`);
   }
 });
 
