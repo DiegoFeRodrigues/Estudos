@@ -82,18 +82,6 @@ conteinerOperadores.addEventListener("click", (evento) => {
 const botaoIgual = document.querySelector(".igual");
 
 botaoIgual.addEventListener("click", () => {
-  const resultado = document.createElement("div");
-  resultado.classList = "resultado";
-
-  const valores = document.querySelectorAll(".valor");
-  valores.forEach(item => display.removeChild(item));
-
-  const operadores = document.querySelectorAll(".operador");
-  operadores.forEach(item => display.removeChild(item));
-
-  resultado.innerText = operar(listaValores[0], listaOperadores[0], listaValores[1]);
-  display.appendChild(resultado);
-
   listaValores.forEach(function(item) {
     if (item == "") { listaValores.pop(item); }
   });
@@ -116,15 +104,31 @@ botaoIgual.addEventListener("click", () => {
 
   if (expressao.length < 3) { console.log("Erro"); }
 
-  valor1 = expressao[0]
-  let acumulador = valor1;
+  function funcaoResultado() {
+    valor1 = expressao[0]
+    let acumulador = valor1;
 
-  for (let indice = 1; indice < expressao.length; indice += 2) {
-    operador = expressao[indice];
-    valor2 = expressao[indice + 1];
+    for (let indice = 1; indice < expressao.length; indice += 2) {
+      operador = expressao[indice];
+      valor2 = expressao[indice + 1];
 
-    acumulador = operar(acumulador, operador, valor2);
+      acumulador = operar(acumulador, operador, valor2);
+    }
+
+    return acumulador;
   }
+
+  const conteinerResultado = document.createElement("div");
+  conteinerResultado.classList = "resultado";
+
+  const valores = document.querySelectorAll(".valor");
+  valores.forEach(item => display.removeChild(item));
+
+  const operadores = document.querySelectorAll(".operador");
+  operadores.forEach(item => display.removeChild(item));
+
+  conteinerResultado.innerText = funcaoResultado();
+  display.appendChild(conteinerResultado);
 
   //console.log(acumulador);
 
