@@ -143,13 +143,13 @@ botaoIgual.addEventListener("click", () => {
   display.appendChild(conteinerResultado);
 
   //console.log(acumulador);
-  console.log(funcaoResultado());
+  //console.log(funcaoResultado());
 
-  console.log(expressao);
+  //console.log(expressao);
 
   //console.log("dentro do evento");
-  console.log(`lista valores: ${listaValores}`);
-  console.log(`lista operadores: ${listaOperadores}`);
+  //console.log(`lista valores: ${listaValores}`);
+  //console.log(`lista operadores: ${listaOperadores}`);
 });
 
 
