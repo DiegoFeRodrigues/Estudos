@@ -38,9 +38,11 @@ function limpaDisplay() {
   }
   const valores = document.querySelectorAll(".valor");
   valores.forEach(item => display.removeChild(item));
+  listaValores = [];
 
   const operadores = document.querySelectorAll(".operador");
   operadores.forEach(item => display.removeChild(item));
+  listaOperadores = [];
 }
 
 const botaoLimpar = document.querySelector(".clear");
@@ -70,14 +72,10 @@ conteinerNumeros.addEventListener("click", (evento) => {
       .split(/[+=\-]/)
       .map(item => Number(item))
     ;
-
-    //console.log("dentro do evento");
-    //console.log(`lista valores: ${listaValores}`);
-    //console.log(`lista operadores: ${listaOperadores}`);
   }
 });
 
-const listaOperadores = [];
+let listaOperadores = [];
 
 const conteinerOperadores = document.querySelector(".conteinerOperadores");
 
@@ -136,8 +134,13 @@ botaoIgual.addEventListener("click", () => {
   display.appendChild(conteinerResultado);
 
   //console.log(acumulador);
+  console.log(funcaoResultado());
 
-  //console.log(expressao);
+  console.log(expressao);
+
+  //console.log("dentro do evento");
+  console.log(`lista valores: ${listaValores}`);
+  console.log(`lista operadores: ${listaOperadores}`);
 });
 
 
