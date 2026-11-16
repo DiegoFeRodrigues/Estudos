@@ -28,6 +28,14 @@ function operar(n1, operador, n2) {
 
 const display = document.querySelector(".displayCalc")
 
+function limpaDisplay() {
+  const valores = document.querySelectorAll(".valor");
+  valores.forEach(item => display.removeChild(item));
+
+  const operadores = document.querySelectorAll(".operador");
+  operadores.forEach(item => display.removeChild(item));
+}
+
 const conteinerNumeros = document.querySelector(".conteinerNum");
 
 let listaValores = [];
@@ -108,14 +116,11 @@ botaoIgual.addEventListener("click", () => {
     return acumulador;
   }
 
+
   const conteinerResultado = document.createElement("div");
   conteinerResultado.classList = "resultado";
 
-  const valores = document.querySelectorAll(".valor");
-  valores.forEach(item => display.removeChild(item));
-
-  const operadores = document.querySelectorAll(".operador");
-  operadores.forEach(item => display.removeChild(item));
+  limpaDisplay();
 
   conteinerResultado.innerText = funcaoResultado();
   display.appendChild(conteinerResultado);
