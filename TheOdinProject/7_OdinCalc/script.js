@@ -29,26 +29,20 @@ function operar(n1, operador, n2) {
   return operadores[operador];
 }
 
-const conteinerNumeros = document.querySelector(".conteinerNum");
-
 const display = document.querySelector(".displayCalc")
 
-const listaOperadores = [];
+const conteinerNumeros = document.querySelector(".conteinerNum");
 
 conteinerNumeros.addEventListener("click", (evento) => {
-  const botaoClicado = document.createElement("div");
-  botaoClicado.classList = "valor";
+  const conteudoValorClicado = evento.target.innerText;
 
-  const conteudoBotaoClicado = evento.target.innerText;
+  const valorClicado = document.createElement("div");
+  valorClicado.classList = "valor";
 
   if (evento.target.classList[1] == "tecla") {
-    botaoClicado.innerText = conteudoBotaoClicado;
+    valorClicado.innerText = conteudoValorClicado;
 
-    display.appendChild(botaoClicado);
-
-    if (conteudoBotaoClicado == "+") {
-      listaOperadores.push(conteudoBotaoClicado)
-    }
+    display.appendChild(valorClicado);
 
     const listaValores = display
       .textContent
@@ -56,7 +50,7 @@ conteinerNumeros.addEventListener("click", (evento) => {
       .map(item => Number(item))
     ;
 
-    if (conteudoBotaoClicado == "=") {
+    if (conteudoValorClicado == "=") {
       const resultado = document.createElement("div");
       const valores = document.querySelectorAll(".valor");
       resultado.classList = "resultado";
@@ -107,3 +101,22 @@ conteinerNumeros.addEventListener("click", (evento) => {
   }
 });
 
+const listaOperadores = [];
+
+const conteinerOperadores = document.querySelector(".conteinerOperadores");
+
+conteinerOperadores.addEventListener("click", (evento) => {
+  const conteudoOperadorClicado = evento.target.innerText;
+
+  const operadorClicado = document.createElement("div");
+  operadorClicado.classList = "operador";
+
+  if (evento.target.classList[1] == "tecla") {
+    operadorClicado.innerText = conteudoOperadorClicado;
+
+    display.appendChild(operadorClicado);
+    listaOperadores.push(conteudoOperadorClicado);
+  }
+
+  console.log(listaOperadores);
+})
