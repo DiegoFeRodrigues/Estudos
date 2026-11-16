@@ -31,11 +31,17 @@ const display = document.querySelector(".displayCalc")
 const conteinerResultado = document.createElement("div");
 conteinerResultado.classList = "resultado";
 
-function limpaDisplay() {
+function limpaResultado() {
   if (display.contains(conteinerResultado)) {
     const resultados = document.querySelectorAll(".resultado");
     resultados.forEach(item => display.removeChild(item));
   }
+}
+
+function limpaDisplay() {
+
+  limpaResultado();
+
   const valores = document.querySelectorAll(".valor");
   valores.forEach(item => display.removeChild(item));
   listaValores = [];
@@ -56,6 +62,9 @@ const conteinerNumeros = document.querySelector(".conteinerNum");
 let listaValores = [];
 
 conteinerNumeros.addEventListener("click", (evento) => {
+  
+  limpaResultado();
+
   const conteudoValorClicado = evento.target.innerText;
 
   const valorClicado = document.createElement("div");
