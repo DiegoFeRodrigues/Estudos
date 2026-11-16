@@ -28,7 +28,14 @@ function operar(n1, operador, n2) {
 
 const display = document.querySelector(".displayCalc")
 
+const conteinerResultado = document.createElement("div");
+conteinerResultado.classList = "resultado";
+
 function limpaDisplay() {
+  if (display.contains(conteinerResultado)) {
+    const resultados = document.querySelectorAll(".resultado");
+    resultados.forEach(item => display.removeChild(item));
+  }
   const valores = document.querySelectorAll(".valor");
   valores.forEach(item => display.removeChild(item));
 
@@ -53,7 +60,7 @@ conteinerNumeros.addEventListener("click", (evento) => {
   valorClicado.classList = "valor";
 
   if (evento.target.classList[1] == "tecla"
-      && conteudoValorClicado != "Limpar") {
+    && conteudoValorClicado != "Limpar") {
     valorClicado.innerText = conteudoValorClicado;
 
     display.appendChild(valorClicado);
@@ -95,7 +102,6 @@ const botaoIgual = document.querySelector(".igual");
 
 botaoIgual.addEventListener("click", () => {
 
-  limpaDisplay();
   const expressao = []
   const maiorLista = Math.max(listaValores.length, listaOperadores.length);
 
@@ -124,9 +130,7 @@ botaoIgual.addEventListener("click", () => {
     return acumulador;
   }
 
-
-  const conteinerResultado = document.createElement("div");
-  conteinerResultado.classList = "resultado";
+  limpaDisplay();
 
   conteinerResultado.innerText = funcaoResultado();
   display.appendChild(conteinerResultado);
@@ -135,4 +139,5 @@ botaoIgual.addEventListener("click", () => {
 
   //console.log(expressao);
 });
+
 
