@@ -36,6 +36,12 @@ function limpaDisplay() {
   operadores.forEach(item => display.removeChild(item));
 }
 
+const botaoLimpar = document.querySelector(".clear");
+
+botaoLimpar.addEventListener("click", () => {
+  limpaDisplay();
+});
+
 const conteinerNumeros = document.querySelector(".conteinerNum");
 
 let listaValores = [];
@@ -46,7 +52,8 @@ conteinerNumeros.addEventListener("click", (evento) => {
   const valorClicado = document.createElement("div");
   valorClicado.classList = "valor";
 
-  if (evento.target.classList[1] == "tecla") {
+  if (evento.target.classList[1] == "tecla"
+      && conteudoValorClicado != "Limpar") {
     valorClicado.innerText = conteudoValorClicado;
 
     display.appendChild(valorClicado);
@@ -88,6 +95,7 @@ const botaoIgual = document.querySelector(".igual");
 
 botaoIgual.addEventListener("click", () => {
 
+  limpaDisplay();
   const expressao = []
   const maiorLista = Math.max(listaValores.length, listaOperadores.length);
 
@@ -120,8 +128,6 @@ botaoIgual.addEventListener("click", () => {
   const conteinerResultado = document.createElement("div");
   conteinerResultado.classList = "resultado";
 
-  limpaDisplay();
-
   conteinerResultado.innerText = funcaoResultado();
   display.appendChild(conteinerResultado);
 
@@ -129,3 +135,4 @@ botaoIgual.addEventListener("click", () => {
 
   //console.log(expressao);
 });
+
