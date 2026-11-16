@@ -82,9 +82,6 @@ conteinerOperadores.addEventListener("click", (evento) => {
 const botaoIgual = document.querySelector(".igual");
 
 botaoIgual.addEventListener("click", () => {
-  listaValores.forEach(function(item) {
-    if (item == "") { listaValores.pop(item); }
-  });
 
   const expressao = []
   const maiorLista = Math.max(listaValores.length, listaOperadores.length);
@@ -97,10 +94,6 @@ botaoIgual.addEventListener("click", () => {
       expressao.push(listaOperadores[i]);
     }
   }
-
-  expressao.forEach(function(item) {
-    if (item == undefined) { expressao.pop(item); }
-  });
 
   if (expressao.length < 3) { console.log("Erro"); }
 
