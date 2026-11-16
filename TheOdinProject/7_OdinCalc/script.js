@@ -17,16 +17,13 @@ let operador;
 let valor2;
 
 function operar(n1, operador, n2) {
-  const operadores = {
-    "+": soma(n1, n2),
-    "-": subtrai(n1, n2),
-    "*": multiplica(n1, n2),
-    "/": divide(n1, n2)
+  switch (operador) {
+    case "+": return soma(n1, n2);
+    case "-": return subtrai(n1, n2);
+    case "*": return multiplica(n1, n2);
+    case "/": return divide(n1, n2);
+    default: return "Erro";
   }
-  if (!operadores[operador]) {
-    return `Operador inválido: ${operador}.`;
-  }
-  return operadores[operador];
 }
 
 const display = document.querySelector(".displayCalc")
