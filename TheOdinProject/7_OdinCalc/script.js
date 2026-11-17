@@ -62,7 +62,7 @@ const conteinerNumeros = document.querySelector(".conteinerNum");
 let listaValores = [];
 
 conteinerNumeros.addEventListener("click", (evento) => {
-  
+
   limpaResultado();
 
   const conteudoValorClicado = evento.target.innerText;
@@ -70,7 +70,7 @@ conteinerNumeros.addEventListener("click", (evento) => {
   const valorClicado = document.createElement("div");
   valorClicado.classList = "valor";
 
-  if (evento.target.classList[1] == "tecla"
+  if (evento.target.tagName == "BUTTON"
     && conteudoValorClicado != "Limpar") {
     valorClicado.innerText = conteudoValorClicado;
 
@@ -80,7 +80,7 @@ conteinerNumeros.addEventListener("click", (evento) => {
       .textContent
       .split(/[+=\-]/)
       .map(item => Number(item))
-    ;
+      ;
   }
 });
 
@@ -94,7 +94,7 @@ conteinerOperadores.addEventListener("click", (evento) => {
   const operadorClicado = document.createElement("div");
   operadorClicado.classList = "operador";
 
-  if (evento.target.classList[1] == "tecla"
+  if (evento.target.tagName == "BUTTON"
     && conteudoOperadorClicado != "=") {
     operadorClicado.innerText = conteudoOperadorClicado;
 
@@ -151,5 +151,4 @@ botaoIgual.addEventListener("click", () => {
   //console.log(`lista valores: ${listaValores}`);
   //console.log(`lista operadores: ${listaOperadores}`);
 });
-
 
