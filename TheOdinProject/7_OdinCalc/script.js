@@ -86,7 +86,7 @@ conteinerNumeros.addEventListener("click", (evento) => {
 
 let listaOperadores = [];
 
-const conteinerOperadores = document.querySelector(".conteinerOperadores");
+const conteinerOperadores = document.querySelector(".operadores");
 
 conteinerOperadores.addEventListener("click", (evento) => {
   const conteudoOperadorClicado = evento.target.innerText;
@@ -94,8 +94,7 @@ conteinerOperadores.addEventListener("click", (evento) => {
   const operadorClicado = document.createElement("div");
   operadorClicado.classList = "operador";
 
-  if (evento.target.tagName == "BUTTON"
-    && conteudoOperadorClicado != "=") {
+  if (evento.target.tagName == "BUTTON") {
     operadorClicado.innerText = conteudoOperadorClicado;
 
     display.appendChild(operadorClicado);
